@@ -94,11 +94,11 @@ class stringMatch:
 
     def comprehension(n):
         the_string = stringMatch.read_file(n)
-        ret_string = ''.join([l for l in the_string if l.isalpha()])
+        letters = ''.join([l for l in the_string if l.isalpha()])
 
     def generator(n):
         the_string = stringMatch.read_file(n)
-        ret_string = ''.join(l for l in the_string if l.isalpha())
+        letters = ''.join(l for l in the_string if l.isalpha())
 
 if __name__ == '__main__':
     run_log = "perf_log.csv"
